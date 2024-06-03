@@ -1,0 +1,17 @@
+
+/* id选择器 */
+
+/* 类选择器 */
+.imgbox {
+    border-top: 5px solid cadetblue;
+    /* 避免因窗口变化影响图片效果 */
+    width: 90%;
+    height: 0.01%;
+    margin: 0 auto;
+}
+.img {
+    width: 95%;
+    height: 0.01%;
+    margin: 0 auto;
+    display: none;
+}

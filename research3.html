@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/slideshow1.css"/>
+<title>Research3 | Ke Liu Research Group @ Peking University</title>
+<link rel="shortcut icon" type="image/png" href="photos/校徽.jpg"/>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="first">
+<div class="menu-category"><i>Ke Liu</i>&nbsp Research Group</div>
+<div class="sencode">
+<div class="menu-item"><a href="index.html" >Home</a></div>
+<div class="menu-item"><a href="bio.html" > Bio</a></div>
+<div class="menu-item"><a href="research.html"class="current">Research</a></div>
+<div class="menu-item"><a href="group.html">Members</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="downloads.html">Downloads</a></div>
+</div>
+</div>
+<!-- <div class="menu-item"><a href="teaching.html">Teaching</a></div> -->
+<div class="menu-category"><img src="photos2/banner.jpg" /></div>
+</td>
+<td id="layout-content">
+    <div id="toptitle"></div>
+    <div class="imgBox">
+        <a><img class="img-slide img" src="photos2/捕获.PNG" alt="img1"></a></div>
+        <h2>Robotic Surfaces  for Shape Morphing and Object Manipulation</h2>
+         <table class="imgtable"><tr><td>  
+            <img src="photos/3.1.PNG" alt="" width="450em" height="400em" />&nbsp;
+        </td> 
+        <td align="left"><p>Continuous and controlled shape morphing is essential for soft machines to conform, grasp, and move while interacting safely with their surroundings. Prof. Ke Liu and his collaborators (Mr. F. Hacker and <a href="https://mce.caltech.edu/people/daraio">Prof. C. Daraio</a>) developed a soft, robotic surface that allows for large, reprogrammable, and pliable shape morphing into smooth 3D geometries. The robotic surface consists of a layered design composed of two active networks serving as artificial muscles, one passive network serving as a skeleton, and cover scales serving as an artificial skin. The active network consists of a grid of strips made of heat-responsive liquid crystal elastomers (LCEs) containing stretchable heating coils. The magnitude and speed of contraction of the LCEs can be controlled by varying the input electric currents. The 1D contraction of the LCE strips activates in-plane and out-of-plane deformations; these deformations are both necessary to transform a flat surface into arbitrary 3D geometries. The robotic surface provides sufficient mechanical stiffness and stability to manipulate other objects. This approach has potential to address the needs of a range of applications beyond shape changes, such as human-robot interactions and reconfigurable electronics.
+            </p>
+            <p>The work was published in <a href="https://www.science.org/doi/abs/10.1126/scirobotics.abf5116"> Science Robotics </a>on June 14, 2017.</p>
+            <p>&nbsp;</p>
+<ul>
+              <li><p><a href="papers/latest/SciRob_21_RoboticSurface.pdf"> View Full Text (PDF)</a></p></li>
+                <li><p><a href="papers/latest/SciRob_21_RoboticSurface_SM.pdf">View Supporting Information (PDF)</a></p></li>
+        </ul>
+        <!-- <p>Watch the group's <a href="http://paulino.princeton.edu/Video/Origami-%20A%20S
+            ource%20of%20Innovations%20in%20Engineering%20and%20Science.mp4">Origami Video</a> that explains Origami engineering in a way that targets K-12 students. 
+            The video placed third in Georgia Tech's ForCAST Video Initiative.</p> -->
+        </td></tr></table>
+        <!-- <h2></h2>
+        <img src="photos/1.2.jpg" alt="" width="450em" height="300em" />&nbsp
+        <img src="photos/1.3.jpg" alt="" width="450em" height="300em" />&nbsp
+        <img src="photos/1.4.jpg" alt="" width="450em" height="300em" />&nbsp
+        <img src="photos/1.5.jpg" alt="" width="450em" height="300em" />&nbsp -->
+        <div id="footer">
+            <div class="block-content content" ng-non-bindable="">
+                <div id='boxes-box-1370373313' class='boxes-box'><div class="boxes-box-content"><p style="text-align:left">
+                <span><span>Peking University</span></span><br />
+                <span>College of Engineering</span><br />
+                    <span>Copyright © by </span></span>
+                    <a href="index.html" target="_blank" title=""><i>Ke Liu</i> Research Group</a>
+        <!-- <div id="footer-text">
+        Page generated 2022-05-20 16:21:09 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+        </div> -->
+        </div>
+    </td>
+</tr>
+</table>
+</body>
+<script>
+    function fun() {
+        var htmlobj = document.getElementsByTagName("html")[0];
+      
+        htmlobj.style.fontSize = document.documentElement.clientWidth / 750*10  + "px";
+        console.log(htmlobj.style.fontSize);
+    }
+    fun();
+    window.onresize = fun;
+
+</script>
+<script type="text/javascript">
+    // index：索引， len：长度
+    var index = 0, len;
+    // 类似获取一个元素数组
+    var imgBox = document.getElementsByClassName("img-slide");
+    len = imgBox.length;
+    imgBox[index].style.display = 'block';
+    // 逻辑控制函数
+    function slideShow() {
+        index ++;
+        // 防止数组溢出
+        if(index >= len) index = 0;
+        // 遍历每一个元素
+        for(var i=0; i<len; i++) {
+            imgBox[i].style.display = 'none';
+        }
+        // 每次只有一张图片显示
+        imgBox[index].style.display = 'block';
+    }
+    
+    // 定时器，间隔3s切换图片
+    setInterval(slideShow, 3000);
+    
+</script>
+</html>
+
